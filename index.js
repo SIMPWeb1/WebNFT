@@ -1,6 +1,7 @@
 
 document.addEventListener("scroll",scrollHeader)
 
+
 function scrollHeader(e) {
     let headerMain = document.getElementById("headerMain")
     if (window.pageYOffset > 1) {
