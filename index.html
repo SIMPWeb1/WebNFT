@@ -6,6 +6,7 @@
     content="text/html;charset=utf-8"
   /><!-- /Added by HTTrack -->
   <head>
+    <link rel="stylesheet" href="./style.css">
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta
@@ -460,7 +461,6 @@
       }
       .section-module--hero--cd68b {
         align-items: center;
-        background: linear-gradient(180deg, #101314, #1a2c70);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -2983,7 +2983,8 @@
       }
       .home-hero-module--videoButton--2f025 {
         align-items: center;
-        background-color: #cb2b83;
+        background-color: #7e5bd6;
+        border-radius: 16px;
         color: #fff;
         cursor: pointer;
         display: flex;
@@ -4985,10 +4986,16 @@
         );
     </script>
     <title id="title" data-gatsby-head="true">
-      NFTfi - Borrow &amp; lend on the leading NFT liquidity protocol - NFTfi
+      Lock Share
     </title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
   </head>
   <body>
+    <div class="container-video">
+        <iframe id="video-trailer" allow='autoplay'>
+       
+        </iframe>
+    </div>
     <div id="___gatsby">
       <div style="outline: none" tabindex="-1" id="gatsby-focus-wrapper">
         <header
@@ -5071,6 +5078,7 @@
           <section
             class="section-module--section--27a22 home-hero-module--section--13590 section-module--hero--cd68b"
           >
+          <video src="./img/video (2160p).mp4" autoplay loop style="position: absolute; width: 100%;height: 100%; object-fit: cover; top:0"></video>
             <div
               class="container-module--container--3a7e6 container-module--constrained--28f48 home-hero-module--container--91ade"
             >
@@ -5079,14 +5087,12 @@
                   <h1
                     class="hero-title-module--title--f32ec hero-title-module--light--42825"
                   >
-                    Use your NFTs to get a crypto loan
+                  Lock the KOL's key to receive rewards
                   </h1>
                   <p
                     class="hero-text-module--text--bbf1b hero-text-module--light--b8280"
                   >
-                    Use your NFT as collateral to borrow wETH, DAI, or USDC from
-                    lenders. Repay your loan, and you get your NFT back. No
-                    auto-liquidations! 0% borrower fees!
+                  Users lock the KOL's key, and the project will reward based on the amount locked by users over 12 months, with APY potentially reaching up to 100%!
                   </p>
                 </div>
                 <div class="hero-buttons-module--buttons--31a8d">
@@ -5094,12 +5100,12 @@
                     class="link-button-module--button--1a818 link-button-module--primary--ad20b link-button-module--lg--9bc62 link-button-module--fill--29387"
                     href="https://app.nftfi.com/borrow/assets"
                     target="_blank"
-                    >Get a loan now</a
+                    >Lock now</a
                   ><a
                     class="link-button-module--button--1a818 link-button-module--secondary--486d3 link-button-module--lg--9bc62"
                     href="https://app.nftfi.com/lend/assets"
                     target="_blank"
-                    >I want to lend</a
+                    >I want to buy KEY</a
                   >
                 </div>
                 <div class="hero-stats-module--stats--bcf1e">
@@ -5107,30 +5113,30 @@
                     class="hero-counter-module--counter--5d5ec hero-counter-module--light--2c52a"
                   >
                     <span class="hero-counter-module--prefix--8ff17">$</span
-                    ><span class="hero-counter-module--count--72757">480</span
+                    ><span class="hero-counter-module--count--72757">1</span
                     ><span class="hero-counter-module--suffix--ebad0">M+</span>
                     <p class="hero-counter-module--title--07024">
-                      Total loan volume (USD)
+                      Total volume lock (USDT)
                     </p>
                   </div>
                   <div
                     class="hero-counter-module--counter--5d5ec hero-counter-module--light--2c52a"
                   >
                     <span class="hero-counter-module--prefix--8ff17"></span
-                    ><span class="hero-counter-module--count--72757">50</span
+                    ><span class="hero-counter-module--count--72757">10</span
                     ><span class="hero-counter-module--suffix--ebad0">K+</span>
                     <p class="hero-counter-module--title--07024">
-                      Total number of loans
+                      Total keys lock
                     </p>
                   </div>
                   <div
                     class="hero-counter-module--counter--5d5ec hero-counter-module--light--2c52a"
                   >
                     <span class="hero-counter-module--prefix--8ff17">$</span
-                    ><span class="hero-counter-module--count--72757">10</span
+                    ><span class="hero-counter-module--count--72757">5</span
                     ><span class="hero-counter-module--suffix--ebad0">K</span>
                     <p class="hero-counter-module--title--07024">
-                      Average loan size
+                      Total users lock
                     </p>
                   </div>
                 </div>
@@ -5200,7 +5206,7 @@
                     }
                   </script>
                 </div>
-                <button class="home-hero-module--videoButton--2f025">
+                <button class="home-hero-module--videoButton--2f025" onclick="openVideo('https://www.youtube.com/embed/6diNXX6pSQM?si=bRwekJjRlA84nlhu')">
                   <svg
                     width="40"
                     height="40"
@@ -5214,7 +5220,7 @@
                       d="M20 37C29.3888 37 37 29.3888 37 20C37 10.6112 29.3888 3 20 3C10.6112 3 3 10.6112 3 20C3 29.3888 10.6112 37 20 37ZM20 40C8.9543 40 0 31.0457 0 20C0 8.9543 8.9543 0 20 0C31.0457 0 40 8.9543 40 20C40 31.0457 31.0457 40 20 40ZM28 20L16 12V28L28 20Z"
                       fill="currentColor"
                     ></path></svg
-                  ><span>See how it works</span>
+                  ><span>See Trailler LockShare</span>
                 </button>
               </div>
             </div>
@@ -5235,28 +5241,9 @@
               >
                 How it works
               </h2>
-              <button
-                class="link-button-module--button--1a818 link-button-module--secondary--486d3 how-it-works-module--videoButton--c1e98"
-              >
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 40 40"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M20 37C29.3888 37 37 29.3888 37 20C37 10.6112 29.3888 3 20 3C10.6112 3 3 10.6112 3 20C3 29.3888 10.6112 37 20 37ZM20 40C8.9543 40 0 31.0457 0 20C0 8.9543 8.9543 0 20 0C31.0457 0 40 8.9543 40 20C40 31.0457 31.0457 40 20 40ZM28 20L16 12V28L28 20Z"
-                    fill="currentColor"
-                  ></path></svg
-                ><span>See our 90-second explainer video</span>
-              </button>
+             
               <p class="intro-module--intro--5e21f intro-module--center--87e61">
-                NFTfi is the leading liquidity protocol for NFTs. NFTfi allows
-                NFT holders to borrow cryptocurrency from lenders by using their
-                NFTs as collateral.
+                Lock Share is the leading system for locking KOLs' keys. With Lock Share, if you have a key, you can both use it as a keepsake with the KOL and also profit from it
               </p>
               <div
                 class="buttons-module--buttons--f56b0 how-it-works-module--topbuttons--5652c buttons-module--center--7b779"
@@ -5272,36 +5259,13 @@
                   <li
                     class="react-tabs__tab react-tabs__tab--selected"
                     role="tab"
-                    id="tab:R2id:0"
-                    aria-selected="true"
-                    aria-disabled="false"
-                    aria-controls="panel:R2id:0"
-                    tabindex="0"
-                    data-rttab="true"
-                  >
-                    Borrowers
-                  </li>
-                  <li
-                    class="react-tabs__tab"
-                    role="tab"
                     id="tab:R2id:1"
                     aria-selected="false"
                     aria-disabled="false"
                     aria-controls="panel:R2id:1"
                     data-rttab="true"
                   >
-                    Lenders
-                  </li>
-                  <li
-                    class="react-tabs__tab"
-                    role="tab"
-                    id="tab:R2id:2"
-                    aria-selected="false"
-                    aria-disabled="false"
-                    aria-controls="panel:R2id:2"
-                    data-rttab="true"
-                  >
-                    Institutions
+                    Lock
                   </li>
                 </ul>
                 <div

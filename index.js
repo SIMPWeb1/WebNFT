@@ -1,17 +1,28 @@
 
 document.addEventListener("scroll",scrollHeader)
 
+document.getElementsByClassName("container-video")[0].addEventListener("click",()=>{
+  document.getElementsByClassName("container-video")[0].style.display="none"
+  document.querySelector("html").style.overflow=""
+})
 
 function scrollHeader(e) {
     let headerMain = document.getElementById("headerMain")
     if (window.pageYOffset > 1) {
-        headerMain.style.background="rgba(16, 26, 60, 1)"
+        headerMain.style.background="rgba(0,0,0, 1)"
       } else {
-        headerMain.style.background="rgba(16, 26, 60, 0)"
+        headerMain.style.background="rgba(0,0,0, 0)"
       }
 }
 
 const walletID = document.getElementsByClassName("text-connect");
+
+function openVideo(url){
+  document.querySelector("html").style.overflow="hidden"
+  console.log(url);
+  document.getElementsByClassName("container-video")[0].style.display="block"
+  document.getElementById("video-trailer").src=url
+}
 
 
 document.addEventListener("DOMContentLoaded",()=> {
@@ -45,3 +56,4 @@ function connect () {
           window.open("https://metamask.io/download/", "_blank");
       }
 }
+
