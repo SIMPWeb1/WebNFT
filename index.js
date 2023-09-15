@@ -25,18 +25,18 @@ function openVideo(url){
 }
 
 
-document.addEventListener("DOMContentLoaded",()=> {
-  let isFirstConnect = localStorage.getItem("isFirstConnect")
-  if(isFirstConnect){
-    ethereum
-    .request({ method: "eth_requestAccounts" })
-    .then((accounts) => {
-      const account = accounts[0];
-      let address = account.slice(0,6)+"..."+account.slice(account.length-5,account.length-1)
-      walletID[0].innerText = address;
-    })
-  }
-})
+// document.addEventListener("DOMContentLoaded",()=> {
+//   let isFirstConnect = localStorage.getItem("isFirstConnect")
+//   if(isFirstConnect){
+//     ethereum
+//     .request({ method: "eth_requestAccounts" })
+//     .then((accounts) => {
+//       const account = accounts[0];
+//       let address = account.slice(0,6)+"..."+account.slice(account.length-5,account.length-1)
+//       walletID[0].innerText = address;
+//     })
+//   }
+// })
 
 
 function connect () {
@@ -57,3 +57,16 @@ function connect () {
       }
 }
 
+ 
+
+
+function toast(){
+  let toastEle = document.getElementById("toast");
+  toastEle.classList.add("active-toast");
+
+  let timer1 = setTimeout(() => {
+        toastEle.classList.remove("active-toast");
+        clearTimeout(timer1);
+    }, 1500);
+  //1s = 1000 milliseconds
+}
